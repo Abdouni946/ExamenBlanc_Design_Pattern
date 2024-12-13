@@ -10,8 +10,6 @@ public class Transaction {
     private double montant;
     private TransactionType type;
 
-    //private AgentRef sourceAgent;
-
     // Builder
     public static class Builder {
         private Transaction transaction;
