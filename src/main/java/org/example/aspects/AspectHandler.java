@@ -9,10 +9,9 @@ import java.util.Map;
 
 public class AspectHandler implements InvocationHandler {
 
-    private final Object target; // L'objet cible à proxifier
+    private final Object target;
     private final Map<String, Object> cache = new HashMap<>(); // Cache local
 
-    // Simuler les rôles actuels de l'utilisateur
     private static final List<String> currentUserRoles = Arrays.asList("ROLE_USER", "ROLE_ADMIN");
 
     public AspectHandler(Object target) {
