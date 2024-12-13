@@ -2,14 +2,15 @@ package org.example.agentManager;
 
 import org.example.enums.TransactionType;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Transaction {
     private String id;
-    private LocalDateTime date;
+    private java.util.Date date;
     private double montant;
     private TransactionType type;
-  //  private AgentRef sourceAgent;
+
+    //private AgentRef sourceAgent;
 
     // Builder
     public static class Builder {
@@ -24,15 +25,11 @@ public class Transaction {
             return this;
         }
 
-        public Builder date(LocalDateTime date) {
+        public Builder date(Date date) {
             transaction.date = date;
             return this;
         }
 
-        public Builder date(double montant) {
-            transaction.montant = montant;
-            return this;
-        }
         public Builder type(TransactionType type) {
             transaction.type = type;
             return this;
@@ -53,7 +50,7 @@ public class Transaction {
         return id;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -65,5 +62,14 @@ public class Transaction {
         return type;
     }
 
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id='" + id + '\'' +
+                ", date=" + date +
+                ", amount=" + montant +
+                ", type=" + type +
+                '}';
+    }
 
 }
