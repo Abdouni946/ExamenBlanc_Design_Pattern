@@ -1,11 +1,10 @@
 package org.example.agentManager;
 
-import org.example.agentManager.Transaction;
 import org.example.enums.TransactionType;
-import org.example.patterns.observer.DefaultStrategy;
+import org.example.patterns.strategy.DefaultStrategy;
 import org.example.patterns.observer.Observable;
 import org.example.patterns.observer.Observer;
-import org.example.patterns.observer.Strategy;
+import org.example.patterns.strategy.Strategy;
 
 import java.util.ArrayList;
 import java.util.Comparator;

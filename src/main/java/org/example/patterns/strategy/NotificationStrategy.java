@@ -1,4 +1,4 @@
-package org.example.patterns.observer;
+package org.example.patterns.strategy;
 
 import javax.management.Notification;
 
