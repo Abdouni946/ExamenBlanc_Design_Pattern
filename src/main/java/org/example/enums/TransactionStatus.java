@@ -1,5 +1,4 @@
 package org.example.enums;
-
 public enum TransactionStatus {
     INITIALE("Transaction créée"),
     VALIDEE("Transaction confirmée"),
